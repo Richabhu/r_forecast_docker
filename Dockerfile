@@ -18,7 +18,7 @@ RUN apt-get update -qq && apt-get install -y \
       libxml2-dev \
       libpcre3-dev && \
       R CMD javareconf && \
-      R -e 'install.packages(c("plumber","dplyr","stringr","jtools","forecast","tidyverse","tidyquant","magrittr","glmnet","e1071","rpart","reshape2","MLmetrics","TSPred","sweep","bsts"))'
+      R -e 'install.packages(c("plumber"))'
 
 COPY . .
 
